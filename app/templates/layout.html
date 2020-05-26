@@ -12,7 +12,11 @@
 
         <link href="/static/styles.css" rel="stylesheet"/>
 
-        <title>Swim Swimming</title>
+        {% if title %}
+        <title>{{ title }} - Swim Swimming</title>
+        {% else %}
+        <title>¡Bienvenidos a Swim Swimming!</title>
+        {% endif %}
 
     </head>
     <body>
